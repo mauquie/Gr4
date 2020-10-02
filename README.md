@@ -10,6 +10,26 @@
 	    def __init__(self, couleur, valeur):
 		self.couleur = couleur
 		self.valeur = valeur
+		
+	class Joueur:
+	  #Represente un joueur
+
+	  def __init__(self, nom, main, tampis, combinaison):
+	    self.nom=str(nom)
+	    self.main=[]
+	    self.tapis=int(tapis)
+	    self.combinaison=combinaison
+
+	  def evaluer(self):
+	    pass
+
+
+	  def nouvelle_donne(self):
+	    pass
+
+
+	  def recvoir_carte(self):
+	    pass
 
 
 
