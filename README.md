@@ -3,7 +3,15 @@
 
 	from random import 
 
+	class Partie:
 
+	  def __init__(self, joueurs):
+	    self.list=joueur
+
+	  def jouer(self):
+	    pass
+	    
+	  
 	class Carte:
 	    #Représente une carte à jouer standard.
 
@@ -31,10 +39,6 @@
 
 	  def recvoir_carte(self):
 	    pass
-
-
-
-
 
 	class Croupier(Carte):
 
