@@ -12,7 +12,7 @@
 		self.valeur = valeur
 
 	    noms_couleurs = ['trèfle', 'carreau', 'cœur', 'pique']
-	    noms_valeurs = [None, 'as', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'V', 'D','R']
+	    noms_valeurs = ['as', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'V', 'D','R']
 
 
 
