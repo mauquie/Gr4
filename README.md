@@ -14,11 +14,12 @@
 	class Joueur:
 	  #Represente un joueur
 
-	  def __init__(self, nom, main, tampis, combinaison):
+	  def __init__(self, nom):
 	    self.nom=str(nom)
-	    self.main=[]
-	    self.tapis=int(tapis)
-	    self.combinaison=combinaison
+	    self.main
+	    self.tapis=1000
+	    self.combinaison
+
 
 	  def evaluer(self):
 	    pass
@@ -30,6 +31,7 @@
 
 	  def recvoir_carte(self):
 	    pass
+
 
 
 
