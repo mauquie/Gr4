@@ -3,6 +3,23 @@
 
 	from random import 
 
+
+
+	couleur=["carreau""coeur""pique""tréfle"]
+	valeur=["2","3","4","5","6","7","8","9","10","valet","reine","roi","as"]
+	t=1
+	C=[]
+	for i in range (couleur):
+	  for j in range (rang):
+	    C[t].append(carte(couleur[i],valeur[j]))
+	    t=t+1
+
+	joueur1=joueur(input("nom du joueur 1"))
+	joueur.main=[C1,C2,C3,C4,C5]
+
+
+
+
 	class Partie:
 
 	  def __init__(self, joueurs):
