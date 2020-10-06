@@ -3,12 +3,6 @@
 
 	from random import 
 
-	class Coup:
-	  #defini les coups
-	    def __init__(croupier, gagnant, joueur):
-	      self.croupier=Croupier
-	      self.gagnant=Joueur
-	      self.joueur=[]
 
 	couleur=["carreau""coeur""pique""tréfle"]
 	valeur=["2","3","4","5","6","7","8","9","10","valet","reine","roi","as"]
@@ -23,7 +17,19 @@
 	joueur.main=[C1,C2,C3,C4,C5]
 
 
+	class Coup:
+	  #defini les coups
+	    def __init__(croupier, gagnant, joueur):
+	      self.croupier=Croupier
+	      self.gagnant=Joueur
+	      self.joueur=[]
 
+	  def abattre(self):
+	    pass
+
+
+	  def distribuer(self):
+	    pass
 
 	class Partie:
 
