@@ -47,36 +47,56 @@
 		self.couleur = couleur
 		self.valeur = valeur
 		
-	class Joueur:
-	  #Represente un joueur
+	class Joueur(Croupier):
 
-	  def __init__(self, nom):
-	    self.nom=str(nom)
-	    self.main
-	    self.tapis=1000
-	    self.combinaison
+	    def __init__(self , nom = "Joueur", main = None, tapis=1000):
+		Croupier.__init__(self)
+		self.nom=nom
+		self.main=main#les cartes en main sont une liste
+		self.tapis=tapis#tapis étant le nombre de jetons
+		self.combinaison
+		
+	    def vider_main(self):
+	    
+		for i in range(0,5):#le mode de jeu est de 5 carte privatives...
+		    self.main.pop()#on les supprimes
 
+	    def recevoir(self):
+	    
+		if len(self.main + 1)!= 0:
+		    vider_main()
+		for i in range(5):
+		    self.main.append(self.paquet[-1])
+		    self.paquet.pop()
+		    #besoin de 5 cartes
 
-	  def evaluer(self):
-	    pass
+	class Croupier(Coup):
 
+	    def __init__(self):
+		Coup.__init__(self)
+		self.paquet = []
 
-	  def nouvelle_donne(self):
-	    pass
+	    def rassembler(self):
+		for i in range(0, len(self.COULEURS)):
+		    for j in range(0, len(self.VALEUR)):
+			self.paquet.append(self.COULEURS[i] + self.VALEUR[j])
 
+	    def melanger(self):
+		random.shuffle(self.paquet)
 
-	  def recvoir_carte(self):
-	    pass
+	    def couper(self):
+		rand = randint(1, 50)
+		t_paquet = []
+		for i in range (0, rand):
+		    _paquett.append(self.paquet[0])
+		    self.paquet.pop(0)
+		for i in range (0, len(t_paquet)):
+		    self.paquet.append(t_paquet[0])
+		    t_paquet.pop(0)
 
-	class Croupier(Carte):
+	    def nouvelle_donne(self):
+		self.rassembler()
+		self.melanger()
+		self.couper()
 
-		def __init__(self):
-			Carte.__init__()
-			self.paquet = []
-		def rassembler(self):
-			for i in range(0, len(self.couleurs)):
-				for j in range(0, len(self.valeur)):
-					self.paquet.append(self.couleurs[i] + self.valeurs[j])
-
-		def melanger(self): 
 
