@@ -1,0 +1,7 @@
+Répartition des tâches:
+
+Théo : Contrôleur ( Création des joueurs / creation d'une partie )
+
+Salim : Partie ( "Liste des joueurs" / Création des coups )
+
+Louis : Coup ( "Liste des joueurs", "Croupier", / Création d'un croupier )
