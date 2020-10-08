@@ -10,7 +10,7 @@
 	C=[]
 	for i in range (couleur):
 	  for j in range (rang):
-	    C[t].append(carte(couleur[i],valeur[j]))
+	    C[t].append(carte(couleur[i],valeur[k]))
 	    t=t+1
 
 	joueur1=joueur(input("nom du joueur 1"))
@@ -78,8 +78,8 @@
 
 	    def rassembler(self):
 		for i in range(0, len(self.COULEURS)):
-		    for j in range(0, len(self.VALEUR)):
-			self.paquet.append(self.COULEURS[i] + self.VALEUR[j])
+		    for k in range(0, len(self.VALEUR)):
+			self.paquet.append(self.COULEURS[i] + self.VALEUR[k])
 
 	    def melanger(self):
 		random.shuffle(self.paquet)
