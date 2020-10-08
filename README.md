@@ -9,7 +9,7 @@
 	t=1
 	C=[]
 	for i in range (couleur):
-	  for j in range (rang):
+	  for k in range (rang):
 	    C[t].append(carte(couleur[i],valeur[k]))
 	    t=t+1
 
